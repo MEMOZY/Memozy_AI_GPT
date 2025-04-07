@@ -35,7 +35,7 @@ directory_path = "./data/fine_tuning_img"
 image_files = [f for f in os.listdir(directory_path) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
 
 # gpt api finetuning 학습으로 쓸 JSONL 파일을 저장할 경로
-fine_tuning_jsonl_path = "./data/fine_tuning_testData.jsonl"
+fine_tuning_jsonl_path = "./data/completed_fine_tuning_Data.jsonl"
 
 # JSONL 파일 쓰기
 with open(fine_tuning_jsonl_path, "w", encoding="utf-8") as jsonl_file:
