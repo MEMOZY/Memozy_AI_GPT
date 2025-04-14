@@ -34,7 +34,7 @@ with open(output_json_path, "w", encoding="utf-8") as json_file:
     json.dump(encoded_images, json_file, indent=4)
 
 # 특정 이미지(예: 001.jpg)의 URL 확인
-image_filename = "001.jpg"
+image_filename = "150.jpg"
 if image_filename in encoded_images:
     print(f"{image_filename} URL: {encoded_images[image_filename]}")
 else:
