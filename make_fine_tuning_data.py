@@ -17,7 +17,7 @@ gpt api 모델을 fine-tuning하기 위한 JSONL 파일 생성 코드
 # 프롬프트 작성 구간
 general_system_message = {
     "role": "system",
-    "content": "너는 나의 그림일기를 대신 작성해주는 역할이야. 내가 너에게 사진을 보여주면 너는 사진을 보고 그 날 있었던 일기를 3문장으로 작성해줘. 일기의 내용 외에는 작성하지마."
+    "content": "너는 나의 그림일기를 대신 작성해주는 역할이야. 내가 너에게 사진을 보여주면 너는 사진을 보고 그 날 있었던 일기를 간단하게 작성해줘. 일기의 내용 외에는 작성하지마."
 }
 
 # 이미지에 대한 일기 내용이 저장된 JSON 파일 읽기
@@ -35,7 +35,7 @@ directory_path = "./data/fine_tuning_img"
 image_files = [f for f in os.listdir(directory_path) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
 
 # gpt api finetuning 학습으로 쓸 JSONL 파일을 저장할 경로
-fine_tuning_jsonl_path = "./data/completed_fine_tuning_Data.jsonl"
+fine_tuning_jsonl_path = "./data/completed_fine_tuning_data.jsonl"
 
 # JSONL 파일 쓰기
 with open(fine_tuning_jsonl_path, "w", encoding="utf-8") as jsonl_file:

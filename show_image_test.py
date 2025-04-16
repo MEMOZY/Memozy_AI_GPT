@@ -35,7 +35,7 @@ with open(img_content_data, "r", encoding="utf-8") as json_file:
     image_content_data = json.load(json_file)
 
 # 150번째 이미지 표시 (인덱스 149)
-target_index = 149
+target_index = 135
 image_items = list(image_data.items())
 
 if target_index < len(image_items):
