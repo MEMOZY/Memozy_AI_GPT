@@ -42,8 +42,8 @@
 6.  이상이 없으면, `make_fine_tuning_data.py`를 실행하여 GPT API 파인튜닝 데이터 `completed_fine_tuning_Data.jsonl`을 생성합니다.
 
 ## 최종 결과
-<사용 이미지>
-![082](https://github.com/user-attachments/assets/8a7d6c25-8695-495b-8a22-61fe12a6c3c6)
+<사용 이미지>  
+<img src="https://github.com/user-attachments/assets/8a7d6c25-8695-495b-8a22-61fe12a6c3c6" width="400"/>
 
 <대화 내역>
 ![result](https://github.com/user-attachments/assets/cd8be803-6f8b-47dd-bbe2-4877caab4a31)
