@@ -46,5 +46,6 @@
 <img src="https://github.com/user-attachments/assets/8a7d6c25-8695-495b-8a22-61fe12a6c3c6" width="400"/>
 
 <대화 내역>
-![result](https://github.com/user-attachments/assets/cd8be803-6f8b-47dd-bbe2-4877caab4a31)
+
+![result](https://github.com/user-attachments/assets/2ae9c1a3-2fc8-4456-98e3-02630610e14e)
 
