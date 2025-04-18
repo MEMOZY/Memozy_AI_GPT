@@ -40,6 +40,7 @@
 4. `image_content_generate.py`를 실행하여 `img_content.json`을 생성한 후, 사용자가 캡션을 작성합니다.</br></br>
 5. `show_image_test.py`를 실행하여 인코딩 정보와 이미지 캡션의 매칭을 확인합니다.</br></br>
 6.  이상이 없으면, `make_fine_tuning_data.py`를 실행하여 GPT API 파인튜닝 데이터 `completed_fine_tuning_Data.jsonl`을 생성합니다.
+7.  이후 생성된 jsonl파일을 가지고 GPT fine tuning을 진행하고 'gpt_flow_test.py'를 이용하여 이미지 일기 생성을 테스트합니다.
 
 ## 최종 결과
 <사용 이미지>  
