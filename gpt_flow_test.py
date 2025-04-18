@@ -18,7 +18,7 @@ gpt api와 대화를 하며 gpt는 사진에 대한 정보를 사용자로부터
 """
 
 client = OpenAI(
-    api_key="OPEN_AI_KEY",
+    api_key="",
 )
 
 
@@ -89,7 +89,7 @@ def generate_diary_with_image(conversation_history, image_path, output_json_path
 
     # 4. GPT API 호출
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="ft:gpt-4o-2024-08-06:personal:capstone150img:BMxNfNjK", #여기에 내가 fine-tuning한 모델을 넣으면 된다. 기본="gpt-4o"
         messages=messages,
         temperature=0.7
     )
