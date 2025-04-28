@@ -52,7 +52,8 @@
 
 <대화 내역>
 
-![results](https://github.com/user-attachments/assets/d0d467a3-6c8a-46c4-856f-e14ea2b4db75)
+![result](https://github.com/user-attachments/assets/2f497b98-50c5-48fd-8b25-199292b22d33)
+
 
 
 
