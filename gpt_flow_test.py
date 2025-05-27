@@ -12,7 +12,7 @@ import re # 텍스트 전처리
 okt = Okt() # 형태소 분석을 위한 준비
 
 client = OpenAI(
-    api_key="OPENAI_API_KEY", # OPENAI API 키
+    api_key="...", # OPENAI API 키
 )
 
 # 형태소 분석 기반 전처리 함수(유저의 입력값, 불용어 txt파일 경로)
@@ -123,7 +123,8 @@ def generate_diary_with_image(conversation_history, encoded_image):
     })
 
     response = client.chat.completions.create(
-        model="ft:gpt-4o-2024-08-06:personal:capstone150img:BMxNfNjK",
+        # model="ft:gpt-4o-2024-08-06:personal:capstone150img:BMxNfNjK",
+        model="gpt-4o",
         messages=messages
     )
 
@@ -214,6 +215,26 @@ img_prompt = """
 출력 형식(Output Format):
 자연스럽고 일상적인 말투로 작성된 일기를 제공합니다.
 일기의 내용 외에는 출력하지 마세요.(해석, 주석, 부연 설명 없이 순수한 일기 형태로 출력하세요)
+- 일기 작성 시 다음의 내용들을 포함하여 일기를 사람이 쓴 것처럼 자연스럽게 작성하세요.
+    오늘 한 일 요약
+    → 오늘 무엇을 했는지 간단히 씁니다.
+    예: 오늘은 학교에서 체육대회를 했다.
+
+    인상 깊은 사건이나 느낌
+    → 기억에 남는 일이나 감정을 포착합니다.
+    예: 특히 이어달리기에서 1등해서 너무 기뻤다.
+
+    그 일이 준 감정
+    → 즐거움, 피곤함, 속상함 등 감정을 솔직하게 표현합니다.
+    예: 열심히 뛴 보람이 느껴졌다.
+
+    생각이나 배운 점
+    → 느낀 점이나 깨달음을 적습니다.
+    예: 역시 팀워크가 중요하다는 걸 다시 느꼈다.
+
+    간단한 마무리
+    → 오늘 하루에 대한 마무리 말을 적습니다.
+    예: 내일은 더 편하게 쉬고 싶다.
 """
 
 conversation_history = {
