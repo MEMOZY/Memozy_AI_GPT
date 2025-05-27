@@ -12,7 +12,7 @@ import re # 텍스트 전처리
 okt = Okt() # 형태소 분석을 위한 준비
 
 client = OpenAI(
-    api_key="...", # OPENAI API 키
+    api_key="OPEN_AI_KEY", # OPENAI API 키
 )
 
 # 형태소 분석 기반 전처리 함수(유저의 입력값, 불용어 txt파일 경로)
@@ -233,8 +233,9 @@ img_prompt = """
     예: 역시 팀워크가 중요하다는 걸 다시 느꼈다.
 
     간단한 마무리
-    → 오늘 하루에 대한 마무리 말을 적습니다.
-    예: 내일은 더 편하게 쉬고 싶다.
+    → 간단한 마무리 말을 적습니다.
+    예: 즐거운 경험이었다.
+
 """
 
 conversation_history = {
